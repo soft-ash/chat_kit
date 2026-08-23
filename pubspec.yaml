@@ -1,0 +1,25 @@
+name: advanced_chat_kit
+description: >
+  A state-management-agnostic, production-grade Flutter chat UI/UX SDK.
+  Own your socket, backend, and state management (GetX, Riverpod, Bloc,
+  Provider, setState) — this package owns the chat experience.
+version: 0.1.0
+homepage: https://github.com/soft-ash/advanced_chat_kit
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^2.9.2
+  just_audio: ^0.9.40
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^4.0.0
+
+flutter:

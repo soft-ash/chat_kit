@@ -1,0 +1,36 @@
+name: advanced_chat_kit_example
+description: Worked usage examples for advanced_chat_kit.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  advanced_chat_kit:
+    path: ../
+
+  # --- Only needed by the specific example file that imports it ---
+  # state_bindings/getx_binding_example.dart
+  get: ^4.6.6
+  # state_bindings/riverpod_binding_example.dart
+  flutter_riverpod: ^2.5.1
+  # state_bindings/bloc_binding_example.dart
+  flutter_bloc: ^8.1.5
+  # with_socket/socket_chat_screen.dart
+  socket_io_client: ^2.0.3+1
+  #
+  # None of these four are dependencies of advanced_chat_kit itself — the
+  # package stays state-management- and transport-agnostic. They're only
+  # here because this *example app* demonstrates binding to each of them.
+  # If you only care about one pattern, delete the other three lines and
+  # the matching example file.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
